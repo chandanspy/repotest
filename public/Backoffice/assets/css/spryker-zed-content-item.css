@@ -1,0 +1,74 @@
+/**
+ * Copyright (c) 2016-present Spryker Systems GmbH. All rights reserved.
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+.content-item-body .template-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content-item-body .template-list label {
+  margin: 0 0 10px 5px;
+}
+.content-item-body .ibox-title {
+  border-width: 0;
+}
+.content-item-body .ibox-title h5 {
+  float: none;
+}
+.content-item-body .error {
+  display: block;
+  color: #F22 !important;
+  font-size: 14px;
+}
+.content-item-body .template-title {
+  font-size: 14px;
+}
+.content-item-body .ibox-title {
+  background-color: #f5f5f5;
+}
+.content-item-body .ibox {
+  border: 1px solid #e7eaec;
+}
+
+.locale-header-info {
+  margin-bottom: 30px;
+}
+
+.clear-button-margin {
+  margin-bottom: 10px;
+}
+
+.overwrite-default-message {
+  font-weight: bold;
+}
+
+.template-name-wrapper {
+  margin-left: 5px;
+}
+
+.content-item-editor {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #2f4050;
+  border-radius: 8px;
+  background-color: rgba(68, 122, 173, 0.54);
+}
+.content-item-editor * {
+  color: #fff !important;
+}
+.content-item-editor > span {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0 20px;
+  letter-spacing: 0.5px;
+}
+.content-item-editor > span:first-child {
+  padding-top: 10px;
+}
+.content-item-editor > span:last-child {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi92ZW5kb3Ivc3ByeWtlci9jb250ZW50LWd1aS9hc3NldHMvWmVkL3Nhc3MvbWFpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsQyIsImZpbGUiOiIuL2Nzcy9zcHJ5a2VyLXplZC1jb250ZW50LWl0ZW0uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBDb3B5cmlnaHQgKGMpIDIwMTYtcHJlc2VudCBTcHJ5a2VyIFN5c3RlbXMgR21iSC4gQWxsIHJpZ2h0cyByZXNlcnZlZC5cbiAqIFVzZSBvZiB0aGlzIHNvZnR3YXJlIHJlcXVpcmVzIGFjY2VwdGFuY2Ugb2YgdGhlIEV2YWx1YXRpb24gTGljZW5zZSBBZ3JlZW1lbnQuIFNlZSBMSUNFTlNFIGZpbGUuXG4gKi9cbi5jb250ZW50LWl0ZW0tYm9keSAudGVtcGxhdGUtbGlzdCB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbn1cbi5jb250ZW50LWl0ZW0tYm9keSAudGVtcGxhdGUtbGlzdCBsYWJlbCB7XG4gIG1hcmdpbjogMCAwIDEwcHggNXB4O1xufVxuLmNvbnRlbnQtaXRlbS1ib2R5IC5pYm94LXRpdGxlIHtcbiAgYm9yZGVyLXdpZHRoOiAwO1xufVxuLmNvbnRlbnQtaXRlbS1ib2R5IC5pYm94LXRpdGxlIGg1IHtcbiAgZmxvYXQ6IG5vbmU7XG59XG4uY29udGVudC1pdGVtLWJvZHkgLmVycm9yIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGNvbG9yOiAjRjIyICFpbXBvcnRhbnQ7XG4gIGZvbnQtc2l6ZTogMTRweDtcbn1cbi5jb250ZW50LWl0ZW0tYm9keSAudGVtcGxhdGUtdGl0bGUge1xuICBmb250LXNpemU6IDE0cHg7XG59XG4uY29udGVudC1pdGVtLWJvZHkgLmlib3gtdGl0bGUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjVmNWY1O1xufVxuLmNvbnRlbnQtaXRlbS1ib2R5IC5pYm94IHtcbiAgYm9yZGVyOiAxcHggc29saWQgI2U3ZWFlYztcbn1cblxuLmxvY2FsZS1oZWFkZXItaW5mbyB7XG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XG59XG5cbi5jbGVhci1idXR0b24tbWFyZ2luIHtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbn1cblxuLm92ZXJ3cml0ZS1kZWZhdWx0LW1lc3NhZ2Uge1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLnRlbXBsYXRlLW5hbWUtd3JhcHBlciB7XG4gIG1hcmdpbi1sZWZ0OiA1cHg7XG59XG5cbi5jb250ZW50LWl0ZW0tZWRpdG9yIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJvcmRlcjogMnB4IHNvbGlkICMyZjQwNTA7XG4gIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSg2OCwgMTIyLCAxNzMsIDAuNTQpO1xufVxuLmNvbnRlbnQtaXRlbS1lZGl0b3IgKiB7XG4gIGNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG59XG4uY29udGVudC1pdGVtLWVkaXRvciA+IHNwYW4ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICBwYWRkaW5nOiAwIDIwcHg7XG4gIGxldHRlci1zcGFjaW5nOiAwLjVweDtcbn1cbi5jb250ZW50LWl0ZW0tZWRpdG9yID4gc3BhbjpmaXJzdC1jaGlsZCB7XG4gIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuLmNvbnRlbnQtaXRlbS1lZGl0b3IgPiBzcGFuOmxhc3QtY2hpbGQge1xuICBtYXJnaW4tYm90dG9tOiAwO1xuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbn0iXSwic291cmNlUm9vdCI6IiJ9*/

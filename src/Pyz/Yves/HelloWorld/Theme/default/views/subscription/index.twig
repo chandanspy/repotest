@@ -1,0 +1,21 @@
+{% extends template("page-layout-main") %}
+
+{% define formdata={
+  subscriptionform:_view.formdata,
+} %}
+
+{% block content %}
+<div class="col col--right">
+  {{form_start(formdata.subscriptionform)}}    
+  {{form_row(formdata.subscriptionform.name)}}
+  {{form_row(formdata.subscriptionform.message)}}
+  
+
+
+
+<button type="submit" class="btn btn-success button button--tight button--medium header__login" style = "margin:20px">Submit</button>
+</div>
+{{form_errors(formdata.subscriptionform)}}
+{{form_end(formdata.subscriptionform)}}
+
+{% endblock %}

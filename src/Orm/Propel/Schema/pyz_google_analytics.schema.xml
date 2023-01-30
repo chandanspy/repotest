@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          name="zed"
+          xsi:noNamespaceSchemaLocation="https://static.spryker.com/schema-01.xsd"
+          namespace="Orm\Zed\GoogleAnalytics\Persistence" package="src.Orm.Zed.GoogleAnalytics.Persistence">
+    <table name="pyz_google_analytics" idMethod="native" allowPkInsert="true"
+           phpName="PyzGoogleAnalytics">
+        <column name="id" required="true" type="INTEGER"
+                primaryKey="true" autoIncrement="true"/>
+        <column name="analyticskey" required="true" type="VARCHAR" size="255"/>
+        <id-method-parameter value="pyz_googleanalytics_pk_seq"/>
+        <behavior name="event">
+            <parameter name="google_analytics_key" column="*"/>
+        </behavior>
+    </table>
+
+</database>

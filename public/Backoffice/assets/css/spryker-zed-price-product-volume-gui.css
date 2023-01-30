@@ -1,0 +1,11 @@
+.price-volume-table {
+  margin-bottom: 15px;
+}
+.price-volume-table td {
+  padding-bottom: 5px;
+}
+.price-volume-table td:nth-of-type(even) {
+  padding-left: 15px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi92ZW5kb3Ivc3ByeWtlci9wcmljZS1wcm9kdWN0LXZvbHVtZS1ndWkvYXNzZXRzL1plZC9zYXNzL3NwcnlrZXItemVkLXByaWNlLXByb2R1Y3Qtdm9sdW1lLWd1aS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxDIiwiZmlsZSI6Ii4vY3NzL3NwcnlrZXItemVkLXByaWNlLXByb2R1Y3Qtdm9sdW1lLWd1aS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJpY2Utdm9sdW1lLXRhYmxlIHtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cbi5wcmljZS12b2x1bWUtdGFibGUgdGQge1xuICBwYWRkaW5nLWJvdHRvbTogNXB4O1xufVxuLnByaWNlLXZvbHVtZS10YWJsZSB0ZDpudGgtb2YtdHlwZShldmVuKSB7XG4gIHBhZGRpbmctbGVmdDogMTVweDtcbn0iXSwic291cmNlUm9vdCI6IiJ9*/

@@ -1,0 +1,13 @@
+{% extends '@Gui/Layout/layout.twig' %}
+{% block content %}
+    {% embed "@Gui/Partials/widget.twig" with {widget_title: 'Google Analytics Configuration'} %}
+     {% endembed  %}
+{#    {{ dump(_context|keys) }}#}
+
+    {{ form_start(GoogleAnalyticsForm) }}
+    {{ form_label(GoogleAnalyticsForm.analyticsKey) }}
+    {{ form_widget(GoogleAnalyticsForm.analyticsKey) }}
+    {{ form_errors(GoogleAnalyticsForm.analyticsKey) }}
+    <input class="btn btn-success" type="submit" value="Save"  style="margin-top: 10px;"/>
+    {{ form_end(GoogleAnalyticsForm) }}
+{% endblock %}

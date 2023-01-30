@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) 2016-present Spryker Systems GmbH. All rights reserved.
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+.invalid-tab {
+  background-color: #f2dede !important;
+  border-color: #ebccd1 !important;
+}
+
+.invalid-tab a {
+  color: #a94442 !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi92ZW5kb3Ivc3ByeWtlci9wcm9kdWN0LWNhdGVnb3J5L2Fzc2V0cy9aZWQvc2Nzcy9tYWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0EsQyIsImZpbGUiOiIuL2Nzcy9zcHJ5a2VyLXplZC1wcm9kdWN0Y2F0ZWdvcnktYXNzaWduLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChjKSAyMDE2LXByZXNlbnQgU3ByeWtlciBTeXN0ZW1zIEdtYkguIEFsbCByaWdodHMgcmVzZXJ2ZWQuXG4gKiBVc2Ugb2YgdGhpcyBzb2Z0d2FyZSByZXF1aXJlcyBhY2NlcHRhbmNlIG9mIHRoZSBFdmFsdWF0aW9uIExpY2Vuc2UgQWdyZWVtZW50LiBTZWUgTElDRU5TRSBmaWxlLlxuICovXG4uaW52YWxpZC10YWIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjJkZWRlICFpbXBvcnRhbnQ7XG4gIGJvcmRlci1jb2xvcjogI2ViY2NkMSAhaW1wb3J0YW50O1xufVxuXG4uaW52YWxpZC10YWIgYSB7XG4gIGNvbG9yOiAjYTk0NDQyICFpbXBvcnRhbnQ7XG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

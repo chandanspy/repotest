@@ -1,0 +1,17 @@
+#product-review-table i.fa-chevron-down {
+  padding: 7px;
+  cursor: pointer;
+}
+#product-review-table table.details {
+  margin-bottom: 15px;
+}
+#product-review-table table.details th,
+#product-review-table table.details td {
+  padding-bottom: 5px;
+}
+#product-review-table table.details th {
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi92ZW5kb3Ivc3ByeWtlci9wcm9kdWN0LXJldmlldy1ndWkvYXNzZXRzL1plZC9zYXNzL21haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsQyIsImZpbGUiOiIuL2Nzcy9zcHJ5a2VyLXplZC1wcm9kdWN0LXJldmlldy1tYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNwcm9kdWN0LXJldmlldy10YWJsZSBpLmZhLWNoZXZyb24tZG93biB7XG4gIHBhZGRpbmc6IDdweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuI3Byb2R1Y3QtcmV2aWV3LXRhYmxlIHRhYmxlLmRldGFpbHMge1xuICBtYXJnaW4tYm90dG9tOiAxNXB4O1xufVxuI3Byb2R1Y3QtcmV2aWV3LXRhYmxlIHRhYmxlLmRldGFpbHMgdGgsXG4jcHJvZHVjdC1yZXZpZXctdGFibGUgdGFibGUuZGV0YWlscyB0ZCB7XG4gIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG4jcHJvZHVjdC1yZXZpZXctdGFibGUgdGFibGUuZGV0YWlscyB0aCB7XG4gIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG4gIHZlcnRpY2FsLWFsaWduOiB0b3A7XG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

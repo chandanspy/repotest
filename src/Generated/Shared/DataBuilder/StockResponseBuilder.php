@@ -1,0 +1,141 @@
+<?php
+
+/**
+ * (c) Spryker Systems GmbH copyright protected
+ */
+
+namespace Generated\Shared\DataBuilder;
+
+use Exception;
+use Generated\Shared\Transfer\StockResponseTransfer;
+use Spryker\Shared\Testify\AbstractDataBuilder;
+
+/**
+ * !!! THIS FILE IS AUTO-GENERATED, EVERY CHANGE WILL BE LOST WITH THE NEXT RUN OF TRANSFER GENERATOR
+ * !!! DO NOT CHANGE ANYTHING IN THIS FILE
+ */
+class StockResponseBuilder extends AbstractDataBuilder
+{
+    /**
+     * @var \Faker\Generator
+     */
+    protected static $faker;
+
+    /**
+     * @var array<string, string>
+     */
+    protected $defaultRules = [
+    ];
+
+    /**
+     * @var array<string, string>
+     */
+    protected $dependencies = [
+        'stock' => 'Stock',
+        'message' => 'Message',
+    ];
+
+    /**
+     * @return \Generated\Shared\Transfer\StockResponseTransfer
+     */
+    public function build(): StockResponseTransfer
+    {
+        /** @var \Generated\Shared\Transfer\StockResponseTransfer $transfer */
+        $transfer = parent::build();
+
+        return $transfer;
+    }
+
+    /**
+     * @param string $builder
+     *
+     * @throws \Exception
+     *
+     * @return \Spryker\Shared\Testify\AbstractDataBuilder
+     */
+    protected function locateDataBuilder($builder)
+    {
+        $builderClass = __NAMESPACE__ . "\\{$builder}Builder";
+
+        if (!class_exists($builderClass)) {
+            throw new Exception("Builder '$builderClass' not found");
+        }
+
+        return new $builderClass;
+    }
+
+    /**
+     * @return \Generated\Shared\Transfer\StockResponseTransfer
+     */
+    public function getTransfer(): StockResponseTransfer
+    {
+        return new StockResponseTransfer;
+    }
+
+    /**
+     * @param array|\Spryker\Shared\Testify\AbstractDataBuilder $overrideOrBuilder
+     *
+     * @return $this
+     */
+    public function withStock($overrideOrBuilder = [])
+    {
+        if ($overrideOrBuilder instanceof AbstractDataBuilder) {
+            $this->addDependencyBuilder('stock', $overrideOrBuilder, false);
+
+            return $this;
+        }
+        $this->buildDependency('stock', $overrideOrBuilder);
+
+        return $this;
+    }
+
+    /**
+     * @param array|\Spryker\Shared\Testify\AbstractDataBuilder $overrideOrBuilder
+     *
+     * @return $this
+     */
+    public function withAnotherStock($overrideOrBuilder = [])
+    {
+        if ($overrideOrBuilder instanceof AbstractDataBuilder) {
+            $this->addDependencyBuilder('stock', $overrideOrBuilder, true);
+
+            return $this;
+        }
+        $this->buildDependency('stock', $overrideOrBuilder, true);
+
+        return $this;
+    }
+    /**
+     * @param array|\Spryker\Shared\Testify\AbstractDataBuilder $overrideOrBuilder
+     *
+     * @return $this
+     */
+    public function withMessage($overrideOrBuilder = [])
+    {
+        if ($overrideOrBuilder instanceof AbstractDataBuilder) {
+            $this->addDependencyBuilder('message', $overrideOrBuilder, false);
+
+            return $this;
+        }
+        $this->buildDependency('message', $overrideOrBuilder);
+
+        return $this;
+    }
+
+    /**
+     * @param array|\Spryker\Shared\Testify\AbstractDataBuilder $overrideOrBuilder
+     *
+     * @return $this
+     */
+    public function withAnotherMessage($overrideOrBuilder = [])
+    {
+        if ($overrideOrBuilder instanceof AbstractDataBuilder) {
+            $this->addDependencyBuilder('message', $overrideOrBuilder, true);
+
+            return $this;
+        }
+        $this->buildDependency('message', $overrideOrBuilder, true);
+
+        return $this;
+    }
+}

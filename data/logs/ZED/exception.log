@@ -1,0 +1,160 @@
+[2022-12-07T06:50:10.928985+00:00] Zed.CRITICAL: ErrorException - file_put_contents(/home/chandankumar/spryker/B2B/b2b-demo-shop/src/Generated/Zed/Navigation/codeBucket/navigation.cache): failed to open stream: Permission denied in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCache.php::60" {"exception":"[object] (ErrorException(code: 0): file_put_contents(/home/chandankumar/spryker/B2B/b2b-demo-shop/src/Generated/Zed/Navigation/codeBucket/navigation.cache): failed to open stream: Permission denied at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCache.php:60)
+[stacktrace]
+#0 [internal function]: Spryker\\Shared\\ErrorHandler\\ErrorHandlerEnvironment->Spryker\\Shared\\ErrorHandler\\{closure}()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCache.php(60): file_put_contents()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCacheBuilder.php(52): Spryker\\Zed\\ZedNavigation\\Business\\Model\\Cache\\ZedNavigationCache->setNavigation()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/ZedNavigationFacade.php(42): Spryker\\Zed\\ZedNavigation\\Business\\Model\\Cache\\ZedNavigationCacheBuilder->writeNavigationCache()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Communication/Console/BuildNavigationConsole.php(44): Spryker\\Zed\\ZedNavigation\\Business\\ZedNavigationFacade->writeNavigationCache()
+#5 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Command/Command.php(299): Spryker\\Zed\\ZedNavigation\\Communication\\Console\\BuildNavigationConsole->execute()
+#6 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(996): Symfony\\Component\\Console\\Command\\Command->run()
+#7 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#10 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#11 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#12 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"DE","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"3dc83075","type":"CLI","request_params":[]}}
+[2022-12-07T06:58:29.117881+00:00] Zed.CRITICAL: ErrorException - Undefined index: bundle in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Strategy/BreadcrumbNavigationMergeStrategy.php::154" {"exception":"[object] (ErrorException(code: 0): Undefined index: bundle at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Strategy/BreadcrumbNavigationMergeStrategy.php:154)
+[stacktrace]
+#0 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Strategy/BreadcrumbNavigationMergeStrategy.php(154): Spryker\\Shared\\ErrorHandler\\ErrorHandlerEnvironment->Spryker\\Shared\\ErrorHandler\\{closure}()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Strategy/BreadcrumbNavigationMergeStrategy.php(127): Spryker\\Zed\\ZedNavigation\\Business\\Strategy\\BreadcrumbNavigationMergeStrategy->isSameModule()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Strategy/BreadcrumbNavigationMergeStrategy.php(70): Spryker\\Zed\\ZedNavigation\\Business\\Strategy\\BreadcrumbNavigationMergeStrategy->getNavigationInNavigationData()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Strategy/BreadcrumbNavigationMergeStrategy.php(52): Spryker\\Zed\\ZedNavigation\\Business\\Strategy\\BreadcrumbNavigationMergeStrategy->mergeNavigationPages()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Collector/ZedNavigationCollector.php(92): Spryker\\Zed\\ZedNavigation\\Business\\Strategy\\BreadcrumbNavigationMergeStrategy->mergeNavigation()
+#5 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCacheBuilder.php(51): Spryker\\Zed\\ZedNavigation\\Business\\Model\\Collector\\ZedNavigationCollector->getNavigation()
+#6 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/ZedNavigationFacade.php(42): Spryker\\Zed\\ZedNavigation\\Business\\Model\\Cache\\ZedNavigationCacheBuilder->writeNavigationCache()
+#7 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Communication/Console/BuildNavigationConsole.php(44): Spryker\\Zed\\ZedNavigation\\Business\\ZedNavigationFacade->writeNavigationCache()
+#8 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Command/Command.php(299): Spryker\\Zed\\ZedNavigation\\Communication\\Console\\BuildNavigationConsole->execute()
+#9 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(996): Symfony\\Component\\Console\\Command\\Command->run()
+#10 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#11 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#12 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#13 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#14 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#15 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"DE","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"f19d2e08","type":"CLI","request_params":[]}}
+[2022-12-07T07:02:34.639854+00:00] Zed.CRITICAL: Symfony\Component\Console\Exception\CommandNotFoundException - Command "router:cache:warm-up" is not defined.
+
+Did you mean one of these?
+    application:build-navigation-cache
+    navigation:build-cache
+    navigation:cache:remove
+    rest-api:build-request-validation-cache
+    rest-api:remove-validation-cache
+    router:cache:warm-up:backend-gateway
+    router:cache:warm-up:backoffice
+    translator:clean-cache
+    translator:generate-cache
+    twig:cache:warmer in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php::682" {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"router:cache:warm-up\" is not defined.
+
+Did you mean one of these?
+    application:build-navigation-cache
+    navigation:build-cache
+    navigation:cache:remove
+    rest-api:build-request-validation-cache
+    rest-api:remove-validation-cache
+    router:cache:warm-up:backend-gateway
+    router:cache:warm-up:backoffice
+    translator:clean-cache
+    translator:generate-cache
+    twig:cache:warmer at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php:682)
+[stacktrace]
+#0 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->find()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#5 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"DE","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"be5c534c","type":"CLI","request_params":[]}}
+[2022-12-07T07:02:40.348031+00:00] Zed.CRITICAL: Symfony\Component\Console\Exception\CommandNotFoundException - Command "router:cache:warm-up" is not defined.
+
+Did you mean one of these?
+    application:build-navigation-cache
+    navigation:build-cache
+    navigation:cache:remove
+    rest-api:build-request-validation-cache
+    rest-api:remove-validation-cache
+    router:cache:warm-up:backend-gateway
+    router:cache:warm-up:backoffice
+    translator:clean-cache
+    translator:generate-cache
+    twig:cache:warmer in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php::682" {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"router:cache:warm-up\" is not defined.
+
+Did you mean one of these?
+    application:build-navigation-cache
+    navigation:build-cache
+    navigation:cache:remove
+    rest-api:build-request-validation-cache
+    rest-api:remove-validation-cache
+    router:cache:warm-up:backend-gateway
+    router:cache:warm-up:backoffice
+    translator:clean-cache
+    translator:generate-cache
+    twig:cache:warmer at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php:682)
+[stacktrace]
+#0 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(255): Symfony\\Component\\Console\\Application->find()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#5 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"DE","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"a4c1a22f","type":"CLI","request_params":[]}}
+[2022-12-07T13:02:34.815512+00:00] Zed.CRITICAL: ErrorException - file_put_contents(/home/chandankumar/spryker/B2B/b2b-demo-shop/src/Generated/Zed/Navigation/codeBucket/navigation.cache): failed to open stream: Permission denied in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCache.php::60" {"exception":"[object] (ErrorException(code: 0): file_put_contents(/home/chandankumar/spryker/B2B/b2b-demo-shop/src/Generated/Zed/Navigation/codeBucket/navigation.cache): failed to open stream: Permission denied at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCache.php:60)
+[stacktrace]
+#0 [internal function]: Spryker\\Shared\\ErrorHandler\\ErrorHandlerEnvironment->Spryker\\Shared\\ErrorHandler\\{closure}()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCache.php(60): file_put_contents()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/Model/Cache/ZedNavigationCacheBuilder.php(52): Spryker\\Zed\\ZedNavigation\\Business\\Model\\Cache\\ZedNavigationCache->setNavigation()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Business/ZedNavigationFacade.php(42): Spryker\\Zed\\ZedNavigation\\Business\\Model\\Cache\\ZedNavigationCacheBuilder->writeNavigationCache()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/zed-navigation/src/Spryker/Zed/ZedNavigation/Communication/Console/BuildNavigationConsole.php(44): Spryker\\Zed\\ZedNavigation\\Business\\ZedNavigationFacade->writeNavigationCache()
+#5 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Command/Command.php(299): Spryker\\Zed\\ZedNavigation\\Communication\\Console\\BuildNavigationConsole->execute()
+#6 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(996): Symfony\\Component\\Console\\Command\\Command->run()
+#7 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#10 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#11 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#12 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"DE","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"63aea9fd","type":"CLI","request_params":[]}}
+[2022-12-12T05:52:07.601869+00:00] Zed.CRITICAL: Exception - Expected class "Pyz\Zed\StoreLocations\Communication\Controller\DownloadController" not found! in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/Router/RouterResource/AbstractRouterResource.php::87" {"exception":"[object] (Exception(code: 0): Expected class \"Pyz\\Zed\\StoreLocations\\Communication\\Controller\\DownloadController\" not found! at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/Router/RouterResource/AbstractRouterResource.php:87)
+[stacktrace]
+#0 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/Router/RouterResource/AbstractRouterResource.php(63): Spryker\\Zed\\Router\\Business\\Router\\RouterResource\\AbstractRouterResource->addRoutesForFile()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/routing/Loader/ClosureLoader.php(36): Spryker\\Zed\\Router\\Business\\Router\\RouterResource\\AbstractRouterResource->__invoke()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/routing/Router.php(193): Symfony\\Component\\Routing\\Loader\\ClosureLoader->load()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/routing/Router.php(353): Symfony\\Component\\Routing\\Router->getRouteCollection()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/routing/Router.php(327): Symfony\\Component\\Routing\\Router->getGeneratorDumperInstance()
+#5 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/config/ConfigCacheFactory.php(42): Symfony\\Component\\Routing\\Router->Symfony\\Component\\Routing\\{closure}()
+#6 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/routing/Router.php(330): Symfony\\Component\\Config\\ConfigCacheFactory->cache()
+#7 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/Router/Router.php(80): Symfony\\Component\\Routing\\Router->getGenerator()
+#8 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/Router/Router.php(121): Spryker\\Zed\\Router\\Business\\Router\\Router->getGenerator()
+#9 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony-cmf/routing/src/ChainRouter.php(344): Spryker\\Zed\\Router\\Business\\Router\\Router->warmUp()
+#10 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/Cache/AbstractCacheWarmer.php(50): Symfony\\Cmf\\Component\\Routing\\ChainRouter->warmUp()
+#11 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Business/RouterFacade.php(174): Spryker\\Zed\\Router\\Business\\Cache\\AbstractCacheWarmer->warmUp()
+#12 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/router/src/Spryker/Zed/Router/Communication/Plugin/Console/BackofficeRouterCacheWarmUpConsole.php(43): Spryker\\Zed\\Router\\Business\\RouterFacade->warmUpBackofficeRouterCache()
+#13 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Command/Command.php(299): Spryker\\Zed\\Router\\Communication\\Plugin\\Console\\BackofficeRouterCacheWarmUpConsole->execute()
+#14 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(996): Symfony\\Component\\Console\\Command\\Command->run()
+#15 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#16 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#17 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#18 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#19 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#20 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"US","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"bdc50233","type":"CLI","request_params":[]}}
+[2022-12-13T14:42:05.073153+00:00] Zed.CRITICAL: PDOException - SQLSTATE[HY000] [1045] Access denied for user 'development'@'172.22.0.25' (using password: YES) in "/home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Business/Model/PropelDatabase/Adapter/MySql/CreateMySqlDatabase.php::33" {"exception":"[object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'development'@'172.22.0.25' (using password: YES) at /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Business/Model/PropelDatabase/Adapter/MySql/CreateMySqlDatabase.php:33)
+[stacktrace]
+#0 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Business/Model/PropelDatabase/Adapter/MySql/CreateMySqlDatabase.php(33): PDO->__construct()
+#1 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Business/Model/PropelDatabase/Adapter/MySql/CreateMySqlDatabase.php(22): Spryker\\Zed\\Propel\\Business\\Model\\PropelDatabase\\Adapter\\MySql\\CreateMySqlDatabase->getConnection()
+#2 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Business/Model/PropelDatabase/Adapter/Adapter.php(94): Spryker\\Zed\\Propel\\Business\\Model\\PropelDatabase\\Adapter\\MySql\\CreateMySqlDatabase->createIfNotExists()
+#3 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Business/PropelFacade.php(196): Spryker\\Zed\\Propel\\Business\\Model\\PropelDatabase\\Adapter\\Adapter->createIfNotExists()
+#4 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Communication/Console/CreateDatabaseConsole.php(45): Spryker\\Zed\\Propel\\Business\\PropelFacade->createDatabase()
+#5 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Command/Command.php(299): Spryker\\Zed\\Propel\\Communication\\Console\\CreateDatabaseConsole->execute()
+#6 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/kernel/src/Spryker/Zed/Kernel/Communication/Console/Console.php(241): Symfony\\Component\\Console\\Command\\Command->run()
+#7 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/propel/src/Spryker/Zed/Propel/Communication/Console/PropelInstallConsole.php(75): Spryker\\Zed\\Kernel\\Communication\\Console\\Console->runDependingCommand()
+#8 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Command/Command.php(299): Spryker\\Zed\\Propel\\Communication\\Console\\PropelInstallConsole->execute()
+#9 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(996): Symfony\\Component\\Console\\Command\\Command->run()
+#10 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#11 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/src/Spryker/Zed/Console/Communication/Bootstrap/ConsoleBootstrap.php(111): Symfony\\Component\\Console\\Application->doRun()
+#12 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/symfony/console/Application.php(167): Spryker\\Zed\\Console\\Communication\\Bootstrap\\ConsoleBootstrap->doRun()
+#13 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/spryker/console/bin/console(26): Symfony\\Component\\Console\\Application->run()
+#14 /home/chandankumar/spryker/B2B/b2b-demo-shop/vendor/bin/console(112): include('/home/chandanku...')
+#15 {main}
+"} {"environment":{"application":"ZED","environment":"development","store":null,"codeBucket":"US","locale":"en_US"},"server":{"url":"http://:/","is_https":false,"hostname":"","user_agent":null,"user_ip":null,"request_method":"cli","referer":null},"request":{"requestId":"afd5dab6","type":"CLI","request_params":[]}}

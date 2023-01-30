@@ -1,0 +1,50 @@
+company-user-access-tokens:
+    post: { idCompanyUser: [NotBlank, Uuid] }
+vouchers:
+    post: { code: [NotBlank] }
+cart-codes:
+    post: { code: [NotBlank] }
+carts:
+    post: { name: [NotBlank, { Length: { max: 30 } }], priceMode: [NotBlank], currency: [NotBlank], store: [NotBlank] }
+    patch: { name: [{ Optional: { constraints: [NotBlank, { Length: { max: 30 } }] } }] }
+customers:
+    post: { email: [NotBlank, Email], salutation: [NotBlank, { Choice: { choices: [Mr, Mrs, Ms, Dr] } }], firstName: [NotBlank, { Length: { max: 100 } }], lastName: [NotBlank, { Length: { max: 100 } }], password: [NotBlank, { Length: { min: 8, max: 64 } }], confirmPassword: [NotBlank, { Length: { min: 8, max: 64 } }], acceptedTerms: [IsTrue], gender: [NotBlank, { Choice: { choices: [Male, Female] } }] }
+    patch: { email: [{ Optional: { constraints: [NotBlank, Email] } }], salutation: [{ Optional: { constraints: [NotBlank, { Choice: { choices: [Mr, Mrs, Ms, Dr] } }] } }], firstName: [{ Optional: { constraints: [NotBlank, { Length: { max: 100 } }] } }], lastName: [{ Optional: { constraints: [NotBlank, { Length: { max: 100 } }] } }], dateOfBirth: [{ Optional: { constraints: [Date] } }], password: [{ Optional: { constraints: [{ Length: { min: 8, max: 64 } }] } }], confirmPassword: [{ Optional: { constraints: [{ Length: { min: 8, max: 64 } }] } }], gender: [{ Optional: { constraints: [NotBlank, { Choice: { choices: [Male, Female] } }] } }] }
+addresses:
+    post: { salutation: [NotBlank, { Choice: { choices: [Mr, Mrs, Ms, Dr] } }], firstName: [NotBlank, { Length: { max: 100 } }], lastName: [NotBlank, { Length: { max: 100 } }], address1: [NotBlank, { Length: { max: 255 } }], address2: [NotBlank, { Length: { max: 255 } }], address3: [{ Optional: { constraints: [{ Length: { max: 255 } }] } }], zipCode: [NotBlank, { Length: { max: 15 } }], city: [NotBlank, { Length: { min: 3, max: 255 } }], phone: [{ Optional: { constraints: [{ Length: { max: 255 } }] } }], iso2Code: [NotBlank, { Length: { max: 2 } }], isDefaultShipping: [{ Type: { type: bool } }], isDefaultBilling: [{ Type: { type: bool } }] }
+    patch: { salutation: [{ Optional: { constraints: [NotBlank, { Choice: { choices: [Mr, Mrs, Ms, Dr] } }] } }], firstName: [{ Optional: { constraints: [NotBlank, { Length: { max: 100 } }] } }], lastName: [{ Optional: { constraints: [NotBlank, { Length: { max: 100 } }] } }], address1: [{ Optional: { constraints: [NotBlank, { Length: { max: 255 } }] } }], address2: [{ Optional: { constraints: [NotBlank, { Length: { max: 255 } }] } }], address3: [{ Optional: { constraints: [{ Length: { max: 255 } }] } }], zipCode: [{ Optional: { constraints: [NotBlank, { Length: { max: 15 } }] } }], city: [{ Optional: { constraints: [NotBlank, { Length: { min: 3, max: 255 } }] } }], phone: [{ Optional: { constraints: [{ Length: { max: 255 } }] } }], iso2Code: [{ Optional: { constraints: [NotBlank, { Length: { max: 2 } }] } }], isDefaultShipping: [{ Optional: { constraints: [{ Type: { type: bool } }] } }], isDefaultBilling: [{ Optional: { constraints: [{ Type: { type: bool } }] } }] }
+customer-password:
+    patch: { password: [NotBlank], newPassword: [NotBlank, { Length: { min: 8, max: 64 } }], confirmPassword: [NotBlank, { Length: { min: 8, max: 64 } }] }
+customer-forgotten-password:
+    post: { email: [NotBlank, Email, { Length: { max: 255 } }] }
+customer-restore-password:
+    patch: { restorePasswordKey: [NotBlank], password: [NotBlank, { Length: { min: 8, max: 64 } }], confirmPassword: [NotBlank, { Length: { min: 8, max: 64 } }] }
+customer-confirmation:
+    post: { registrationKey: [NotBlank] }
+product-reviews:
+    post: { rating: [NotBlank, { Type: { type: numeric } }, { GreaterThanOrEqual: { value: 1 } }, { LessThanOrEqual: { value: 5 } }], summary: [NotBlank, { Length: { max: 255 } }], nickname: [NotBlank, { Length: { max: 255 } }] }
+checkout-data:
+    post: { idCart: [NotBlank], customer: [{ Optional: { constraints: [{ Collection: { fields: { salutation: [NotBlank], email: [EmailConstraint] } } }] } }], billingAddress: [{ Optional: { constraints: [{ Collection: { fields: { salutation: [NotBlank], firstName: [NotBlank], lastName: [NotBlank], address1: [NotBlank], address2: [NotBlank], zipCode: [NotBlank], city: [NotBlank, { Length: { min: 3 } }], iso2Code: [NotBlank], isDefaultBilling: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }], isDefaultShipping: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }] } } }] } }], shippingAddress: [{ Optional: { constraints: [{ Collection: { fields: { salutation: [NotBlank], firstName: [NotBlank], lastName: [NotBlank], address1: [NotBlank], address2: [NotBlank], zipCode: [NotBlank], city: [NotBlank, { Length: { min: 3 } }], iso2Code: [NotBlank], isDefaultBilling: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }], isDefaultShipping: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }] } } }] } }], payments: [{ Optional: { constraints: [{ All: { constraints: [{ Collection: { fields: { paymentMethodName: [NotBlank], paymentProviderName: [NotBlank] } } }] } }] } }], shipment: [{ Optional: { constraints: [{ Collection: { fields: { idShipmentMethod: [NotBlank, { Type: { type: numeric } }] } } }] } }], shipments: [{ Optional: { constraints: [{ All: { constraints: [{ Collection: { fields: { items: [{ All: { constraints: [NotBlank, { Type: { type: string } }] } }], shippingAddress: [NotBlank], idShipmentMethod: [Optional, { Type: { type: numeric } }], requestedDeliveryDate: [Optional, Date] } } }] } }] } }] }
+checkout:
+    post: { idCart: [NotBlank], customer: [{ Collection: { fields: { salutation: [NotBlank], email: [EmailConstraint] } } }], billingAddress: [{ Collection: { fields: { salutation: [NotBlank], firstName: [NotBlank], lastName: [NotBlank], address1: [NotBlank], address2: [NotBlank], zipCode: [NotBlank], city: [NotBlank, { Length: { min: 3 } }], iso2Code: [NotBlank], isDefaultBilling: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }], isDefaultShipping: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }] } } }], shippingAddress: [{ Optional: { constraints: [{ Collection: { fields: { salutation: [NotBlank], firstName: [NotBlank], lastName: [NotBlank], address1: [NotBlank], address2: [NotBlank], zipCode: [NotBlank], city: [NotBlank, { Length: { min: 3 } }], iso2Code: [NotBlank], isDefaultBilling: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }], isDefaultShipping: [{ Optional: { constraints: [{ Type: { type: boolean } }] } }] } } }] } }], payments: [NotBlank, { All: { constraints: [{ Collection: { fields: { paymentMethodName: [NotBlank], paymentProviderName: [NotBlank] } } }] } }], shipment: [{ Optional: { constraints: [{ Collection: { fields: { idShipmentMethod: [NotBlank, { Type: { type: numeric } }] } } }] } }], shipments: [{ Optional: { constraints: [{ All: { constraints: [{ Collection: { fields: { items: [{ All: { constraints: [NotBlank, { Type: { type: string } }] } }], shippingAddress: [NotBlank], idShipmentMethod: [NotBlank, { Type: { type: numeric } }], requestedDeliveryDate: [Optional, Date] } } }] } }] } }] }
+shopping-lists:
+    post: { name: [NotBlank, { Length: { max: 255 } }] }
+    patch: { name: [NotBlank, { Length: { max: 255 } }] }
+shopping-list-items:
+    post: { sku: [NotBlank], quantity: [NotBlank, { Type: { type: integer } }, { GreaterThan: { value: 0 } }, { LessThan: { value: 2147483647 } }] }
+    patch: { quantity: [NotBlank, { Type: { type: integer } }, { GreaterThan: { value: 0 } }, { LessThan: { value: 2147483647 } }] }
+availability-notifications:
+    post: { sku: [NotBlank], email: [NotBlank, Email] }
+shared-carts:
+    post: { idCompanyUser: [NotBlank], idCartPermissionGroup: [NotBlank] }
+    patch: { idCartPermissionGroup: [NotBlank] }
+access-tokens:
+    post: { username: [NotBlank, Email], password: [NotBlank] }
+refresh-tokens:
+    post: { refreshToken: [NotBlank] }
+items:
+    post: { sku: [NotBlank], quantity: [NotBlank, { Type: { type: numeric } }, { GreaterThan: { value: 0 } }] }
+    patch: { quantity: [NotBlank, { Type: { type: numeric } }] }
+guest-cart-items:
+    post: { sku: [NotBlank], quantity: [NotBlank, { Type: { type: numeric } }, { GreaterThan: { value: 0 } }] }
+    patch: { quantity: [NotBlank, { Type: { type: numeric } }] }

@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * (c) Spryker Systems GmbH copyright protected
+ */
+
+namespace Generated\Shared\DataBuilder;
+
+use Exception;
+use Generated\Shared\Transfer\StockProductTransfer;
+use Spryker\Shared\Testify\AbstractDataBuilder;
+
+/**
+ * !!! THIS FILE IS AUTO-GENERATED, EVERY CHANGE WILL BE LOST WITH THE NEXT RUN OF TRANSFER GENERATOR
+ * !!! DO NOT CHANGE ANYTHING IN THIS FILE
+ */
+class StockProductBuilder extends AbstractDataBuilder
+{
+    /**
+     * @var \Faker\Generator
+     */
+    protected static $faker;
+
+    /**
+     * @var array<string, string>
+     */
+    protected $defaultRules = [
+        "isNeverOutOfStock" => "numberBetween(0,1)",
+        "quantity" => "randomDigitNotNull",
+        "sku" => "isbn10",
+    ];
+
+    /**
+     * @var array<string, string>
+     */
+    protected $dependencies = [
+    ];
+
+    /**
+     * @return \Generated\Shared\Transfer\StockProductTransfer
+     */
+    public function build(): StockProductTransfer
+    {
+        /** @var \Generated\Shared\Transfer\StockProductTransfer $transfer */
+        $transfer = parent::build();
+
+        return $transfer;
+    }
+
+    /**
+     * @param string $builder
+     *
+     * @throws \Exception
+     *
+     * @return \Spryker\Shared\Testify\AbstractDataBuilder
+     */
+    protected function locateDataBuilder($builder)
+    {
+        $builderClass = __NAMESPACE__ . "\\{$builder}Builder";
+
+        if (!class_exists($builderClass)) {
+            throw new Exception("Builder '$builderClass' not found");
+        }
+
+        return new $builderClass;
+    }
+
+    /**
+     * @return \Generated\Shared\Transfer\StockProductTransfer
+     */
+    public function getTransfer(): StockProductTransfer
+    {
+        return new StockProductTransfer;
+    }
+
+}

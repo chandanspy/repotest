@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <administration>
+        <pages>
+            <google-analytics-config>
+                <label>Add/Change Key</label>
+                <title>Add/Change Key</title>
+                <bundle>google-analytics</bundle>
+                <controller>googleanalytics</controller>
+                <action>index</action>
+                <visible>1</visible>
+            </google-analytics-config>
+        </pages>
+    </administration>
+</config>

@@ -1,0 +1,74 @@
+/**
+ * Copyright (c) 2016-present Spryker Systems GmbH. All rights reserved.
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+.content-item-body .template-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content-item-body .template-list label {
+  margin: 0 0 10px 5px;
+}
+.content-item-body .ibox-title {
+  border-width: 0;
+}
+.content-item-body .ibox-title h5 {
+  float: none;
+}
+.content-item-body .error {
+  display: block;
+  color: #F22 !important;
+  font-size: 14px;
+}
+.content-item-body .template-title {
+  font-size: 14px;
+}
+.content-item-body .ibox-title {
+  background-color: #f5f5f5;
+}
+.content-item-body .ibox {
+  border: 1px solid #e7eaec;
+}
+
+.locale-header-info {
+  margin-bottom: 30px;
+}
+
+.clear-button-margin {
+  margin-bottom: 10px;
+}
+
+.overwrite-default-message {
+  font-weight: bold;
+}
+
+.template-name-wrapper {
+  margin-left: 5px;
+}
+
+.content-item-editor {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #2f4050;
+  border-radius: 8px;
+  background-color: rgba(68, 122, 173, 0.54);
+}
+.content-item-editor * {
+  color: #fff !important;
+}
+.content-item-editor > span {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0 20px;
+  letter-spacing: 0.5px;
+}
+.content-item-editor > span:first-child {
+  padding-top: 10px;
+}
+.content-item-editor > span:last-child {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi92ZW5kb3Ivc3ByeWtlci9jb250ZW50LWd1aS9hc3NldHMvWmVkL3Nhc3MvbWFpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsQyIsImZpbGUiOiIuL2Nzcy9zcHJ5a2VyLXplZC1jb250ZW50LWNsZWFyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ29weXJpZ2h0IChjKSAyMDE2LXByZXNlbnQgU3ByeWtlciBTeXN0ZW1zIEdtYkguIEFsbCByaWdodHMgcmVzZXJ2ZWQuXG4gKiBVc2Ugb2YgdGhpcyBzb2Z0d2FyZSByZXF1aXJlcyBhY2NlcHRhbmNlIG9mIHRoZSBFdmFsdWF0aW9uIExpY2Vuc2UgQWdyZWVtZW50LiBTZWUgTElDRU5TRSBmaWxlLlxuICovXG4uY29udGVudC1pdGVtLWJvZHkgLnRlbXBsYXRlLWxpc3Qge1xuICBsaXN0LXN0eWxlOiBub25lO1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG59XG4uY29udGVudC1pdGVtLWJvZHkgLnRlbXBsYXRlLWxpc3QgbGFiZWwge1xuICBtYXJnaW46IDAgMCAxMHB4IDVweDtcbn1cbi5jb250ZW50LWl0ZW0tYm9keSAuaWJveC10aXRsZSB7XG4gIGJvcmRlci13aWR0aDogMDtcbn1cbi5jb250ZW50LWl0ZW0tYm9keSAuaWJveC10aXRsZSBoNSB7XG4gIGZsb2F0OiBub25lO1xufVxuLmNvbnRlbnQtaXRlbS1ib2R5IC5lcnJvciB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBjb2xvcjogI0YyMiAhaW1wb3J0YW50O1xuICBmb250LXNpemU6IDE0cHg7XG59XG4uY29udGVudC1pdGVtLWJvZHkgLnRlbXBsYXRlLXRpdGxlIHtcbiAgZm9udC1zaXplOiAxNHB4O1xufVxuLmNvbnRlbnQtaXRlbS1ib2R5IC5pYm94LXRpdGxlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTtcbn1cbi5jb250ZW50LWl0ZW0tYm9keSAuaWJveCB7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNlN2VhZWM7XG59XG5cbi5sb2NhbGUtaGVhZGVyLWluZm8ge1xuICBtYXJnaW4tYm90dG9tOiAzMHB4O1xufVxuXG4uY2xlYXItYnV0dG9uLW1hcmdpbiB7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi5vdmVyd3JpdGUtZGVmYXVsdC1tZXNzYWdlIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi50ZW1wbGF0ZS1uYW1lLXdyYXBwZXIge1xuICBtYXJnaW4tbGVmdDogNXB4O1xufVxuXG4uY29udGVudC1pdGVtLWVkaXRvciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBib3JkZXI6IDJweCBzb2xpZCAjMmY0MDUwO1xuICBib3JkZXItcmFkaXVzOiA4cHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNjgsIDEyMiwgMTczLCAwLjU0KTtcbn1cbi5jb250ZW50LWl0ZW0tZWRpdG9yICoge1xuICBjb2xvcjogI2ZmZiAhaW1wb3J0YW50O1xufVxuLmNvbnRlbnQtaXRlbS1lZGl0b3IgPiBzcGFuIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbiAgcGFkZGluZzogMCAyMHB4O1xuICBsZXR0ZXItc3BhY2luZzogMC41cHg7XG59XG4uY29udGVudC1pdGVtLWVkaXRvciA+IHNwYW46Zmlyc3QtY2hpbGQge1xuICBwYWRkaW5nLXRvcDogMTBweDtcbn1cbi5jb250ZW50LWl0ZW0tZWRpdG9yID4gc3BhbjpsYXN0LWNoaWxkIHtcbiAgbWFyZ2luLWJvdHRvbTogMDtcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/
