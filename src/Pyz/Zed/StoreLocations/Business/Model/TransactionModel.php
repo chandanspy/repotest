@@ -8,7 +8,6 @@ use Orm\Zed\StoreLocations\Persistence\PyzStoreLocations;
 use Orm\Zed\StoreLocations\Persistence\PyzStoreLocationsQuery;
 use Propel\Runtime\Exception\PropelException;
 use Spryker\Zed\Propel\Business\Exception\AmbiguousComparisonException;
-//upselling,cross sell,related on pdp |volume prices
 class TransactionModel implements TransactionModelInterface
 {
     /**
