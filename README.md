@@ -36,13 +36,7 @@ To set up the B2B Demo Shop and its environment, do the following:
 ```bash
 mkdir spryker-b2b && cd spryker-b2b
 ```
-
-2. Clone the B2B Demo Shop:
-```bash
-git clone https://github.com/spryker-shop/b2b-demo-shop.git ./
-```
-
-3. Clone the Docker SDK:
+2. Clone the Docker SDK:
 ```bash
 git clone git@github.com:spryker/docker-sdk.git docker
 ```
